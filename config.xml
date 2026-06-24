@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="https://github.com/bweep99/beztris" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="p2uTcW9890.Beztris" package="p2uTcW9890" required_version="5.5"/>
+    <author>bwepa</author>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://tizen.org/feature/screen.shape.circle"/>
+    <icon src="beztris icon.png"/>
+    <name>Beztris</name>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+</widget>

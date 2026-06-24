@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+  <title>Beztris</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- SPLASH SCREEN -->
+  <div id="splash">
+    <h1>
+      <span style="color:#e74c3c">B</span><span style="color:#e67e22">E</span><span style="color:#f1c40f">Z</span><span style="color:#2ecc71">T</span><span style="color:#3498db">R</span><span style="color:#00f0f0">I</span><span style="color:#9b59b6">S</span>
+    </h1>
+    <p>LOADING...</p>
+  </div>
+
+  <!-- GAME SCREEN -->
+  <div id="gameScreen">
+    <canvas id="boardCanvas" width="160" height="320"></canvas>
+
+    <!-- Left HUD -->
+    <div id="leftHud">
+      <!-- Clean SVG Pause Button -->
+      <div id="pauseBtn">
+        <svg viewBox="0 0 24 24"><path d="M14,19H18V5H14M6,19H10V5H6V19Z"/></svg>
+      </div>
+      <div class="hud-box">
+        <div class="hud-label">SCORE</div>
+        <div class="hud-value" id="scoreVal">0</div>
+      </div>
+      <div class="hud-box">
+        <div class="hud-label">LEVEL</div>
+        <div class="hud-value" id="levelVal">1</div>
+      </div>
+    </div>
+
+    <!-- Right HUD -->
+    <div id="rightHud">
+      <div class="hud-box">
+        <div class="hud-label">HOLD</div>
+        <canvas id="holdCanvas" width="56" height="56"></canvas>
+      </div>
+      <div class="hud-box" style="margin-top: 15px;">
+        <canvas id="nextCanvas" width="56" height="150"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- OVERLAYS -->
+  <div id="overlay">
+    <!-- Pause Menu -->
+    <div id="pauseMenu">
+      <div class="pmBtn" id="pmResume">
+        <div class="pmIcon">
+          <svg viewBox="0 0 24 24"><path d="M8,5.14V19.14L19,12.14L8,5.14Z"/></svg>
+        </div>
+        <span>RESUME</span>
+      </div>
+      <div class="pmBtn" id="pmLevel">
+        <div class="pmIcon">
+          <svg viewBox="0 0 24 24"><path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"/></svg>
+        </div>
+        <span>LEVEL</span>
+      </div>
+      <div class="pmBtn" id="pmControls">
+        <div class="pmIcon">
+          <svg viewBox="0 0 24 24"><path d="M21,6H3C1.9,6 1,6.9 1,8V16C1,17.1 1.9,18 3,18H7L10,15H14L17,18H21C22.1,18 23,17.1 23,16V8C23,6.9 22.1,6 21,6M6,14H4V12H6V14M6,11H4V9H6V11M9,14H7V12H9V14M9,11H7V9H9V11M16,14C15.4,14 15,13.6 15,13C15,12.4 15.4,12 16,12C16.6,12 17,12.4 17,13C17,13.6 16.6,14 16,14M18,11C17.4,11 17,10.6 17,10C17,9.4 17.4,9 18,9C18.6,9 19,9.4 19,10C19,10.6 18.6,11 18,11Z"/></svg>
+        </div>
+        <span>CONTROLS</span>
+      </div>
+      <div class="pmBtn" id="pmRestart">
+        <div class="pmIcon">
+          <svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 0,1 6,12C6,11 6.25,10.03 6.7,9.2L5.24,7.74C4.46,8.97 4,10.43 4,12A8,8 0 0,0 12,20V23L16,19L12,15M12,4V1L8,5L12,9V6A6,6 0 0,1 18,12C18,13 17.75,13.97 17.3,14.8L18.76,16.26C19.54,15.03 20,13.57 20,12A8,8 0 0,0 12,4Z"/></svg>
+        </div>
+        <span>RESTART</span>
+      </div>
+    </div>
+
+    <!-- Level Select -->
+    <div id="levelMenu">
+      <div class="arrowBtn" id="lvlUp">▲</div>
+      <div id="levelLabel">LEVEL</div>
+      <div id="levelNum">1</div>
+      <div id="levelMax">/1</div>
+      <div class="arrowBtn" id="lvlDown">▼</div>
+      <div id="levelBack">❮ BACK</div>
+    </div>
+
+    <!-- Controls Menu -->
+    <div id="controlsMenu">
+      <div id="ctrlLeft">ROTATE<br>LEFT</div>
+      <div id="ctrlRight">ROTATE<br>RIGHT</div>
+      <div id="ctrlHold">HOLD</div>
+      <div id="ctrlDrop">DROP</div>
+      <div id="ctrlMove">MOVE<br><span class="ctrl-sub">BEZEL MOVE</span></div>
+      <div id="ctrlBackBtn">BACK</div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
