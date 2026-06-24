@@ -21,7 +21,7 @@ The game is designed for one-handed play using the **Physical/Digital Rotary Bez
 
 ---
 
-## 📥 Installation (The 2026 "No-Certificate" Bypass)
+## 📥 Installation
 
 Standard sideloading via Tizen Studio usually fails with `Error [-27]` because Samsung's certificate servers are defunct. This method "smuggles" the game inside a trusted Android companion app, bypassing the need for developer certificates or watch debugging.
 
