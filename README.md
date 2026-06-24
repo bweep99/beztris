@@ -44,7 +44,7 @@ Standard sideloading via Tizen Studio usually fails with `Error [-27]` because S
 3.  **Sync to Watch:**
     *   Ensure your watch is connected to your phone via the Galaxy Wearable app.
     *   Open the newly installed **WatcherManager** app on your phone.
-    *   The app will automatically push **Beztris** to your watch. **No "Developer Mode" or "Debugging" is required on the watch for this method!**
+    *   The app will automatically push **Beztris** to your watch.
 
 ---
 
