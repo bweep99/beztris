@@ -50,11 +50,10 @@ Standard sideloading via Tizen Studio usually fails with `Error [-27]` because S
 
 ## 🛠️ Credits & Acknowledgments
 
-- **Vibe Coding:** This project was realized through the power of **"Vibe Coding"**—transforming high-level aesthetic intent, legacy "vibes," and specific rotary UX descriptions into functional code through AI collaboration.
+- **Vibe Coding:** This project was realized through the power of **"Vibe Coding"**(ilysm ai studio).
 - **maximus7maximus (4PDA):** For discovering the APK-smuggling workaround to bypass Tizen's dead certificate servers.
 - **XDA Developers:** For documenting the modern 2026 sideloading workflow.
 - **Jens-Gervais:** For the [Blockso](https://github.com/Jens-Gervais/Blockso) project, which provided the foundation for the game's logic.
-- **bwepa:** The creator of the original "Bestris" which defined the bezel-control scheme for smartwatches.
 
 ---
 
